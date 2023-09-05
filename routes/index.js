@@ -1,7 +1,6 @@
 const express = require('express')
 const {home, generateAuto, generatePlain, results} = require('../controller/mainContrl.js')
 
-
 const router = express.Router()
 const ctrl = require('../controller/mainContrl')
 router.get('/', home)
