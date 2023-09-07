@@ -1,12 +1,8 @@
 
 
 
-.innerDiv-div {
-  border: 3px solid #fff;
-  padding: 10px;
-}
-
 .innerDiv-div-item {
+
   width: 20%;
   float: left;
   padding: 10px;
@@ -17,7 +13,7 @@
 
 
 
-  input[type="checkbox"][id^="innerDiv-div-3-"] {
+  input[type="checkbox"][id^="innerDiv-div"] {
     display: none;
   }
   
@@ -66,15 +62,15 @@
     border-color: #ddd;
   }
   
-  :checked+label::before {
+  /* :checked+label::before {
     content: "✓";
     background-color: grey;
     transform: scale(1);
-  }
+  } */
   
   :checked+label img {
     transform: scale(0.9);
-    box-shadow: 0 0 5px #333;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     z-index: -1;
   }
 

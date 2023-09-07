@@ -41,6 +41,7 @@ body, h1, label {
 
 /* Style innerDiv-div sections (div containing inputs) */
 .innerDiv-div {
+  min-height: 120px;
   padding: 15px;
   background-color: #fff;
   border: 1px solid #ddd;

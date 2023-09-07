@@ -13,77 +13,112 @@
   <h1>ReadMe Configuration</h1>
 
   <div class="home-container">
-    <form id="myForm">
+    <form id="myForm" method="post" action="/results">
+
       <div class="innerDiv" id="innerDiv1">
 
         <label for="innerDiv-div1" >Tell about yourself</label>
         <div class="innerDiv-div" id="innerDiv-div1"> 
           
           <label for="innerDiv-div-1-1">Name</label>
-          <input class="innerDiv-div-input" type="text" id="innerDiv-div-1-1"  placeholder="Hey there, I'm John Doe"/>
+          <input class="innerDiv-div-input" type="text" id="innerDiv-div-1-1" name="Name"  placeholder="Hey there, I'm John Doe"/>
 
           <label for="innerDiv-div-1-1">Location</label>
-          <input class="innerDiv-div-input" type="text" id="innerDiv-div-1-2"  placeholder="I'm from mars" />
+          <input class="innerDiv-div-input" type="text" id="innerDiv-div-1-2" name="Location" placeholder="I'm from mars" />
 
-          <label for="innerDiv-div-1-1">Mail</label>
-          <input class="innerDiv-div-input" type="text" id="innerDiv-div-1-3" placeholder="johndoe@email.com" />
+          <label for="innerDiv-div-1-1">Email</label>
+          <input class="innerDiv-div-input" type="text" id="innerDiv-div-1-3" name="Email" placeholder="johndoe@email.com" />
 
           <label for="innerDiv-div-1-1">Interests:</label>
-          <input class="innerDiv-div-input" type="text" id="innerDiv-div-1-4" placeholder="javascript,python,etc" />
+          <input class="innerDiv-div-input" type="text" id="innerDiv-div-1-4" name="Interests" placeholder="javascript,python,etc" />
         </div>
-
-        <hr>
-
-        <div class="innerDiv" id="innerDiv2">
-          <label for="innerDiv-div2">Social:</label>
-          <div class="innerDiv-div" id="innerDiv-div2">
-
-            <label for="innerDiv-div-2-1">Enter your LinkedIn url: </label>
-            <input class="innerDiv-div-input" type="text" id="innerDiv-div-2-1" placeholder="https://www.linkedin.com/in/johndoe
-            "/>
-
-            <label for="innerDiv-div-2-2">Enter your portfolio website url: </label>
-            <input class="innerDiv-div-input" type="text" id="innerDiv-div-2-2" placeholder="https://www.example.com"/>
-
-            <label for="innerDiv-div-2-3">Enter your Twitter url: </label>
-            <input class="innerDiv-div-input" type="text" id="innerDiv-div-2-3" placeholder="https://twitter.com/johndoe
-            "/>
-          </div>
-          
-        </div>
-
-        <hr>
-
-        <div class="innerDiv" id="innerDiv2">
-          
-          <label for="innerDiv-div3">Programming Languages</label>
-          <div class="innerDiv-div" id="innerDiv-div3">
-
-                <div class="innerDiv-div-item">
-                    <input type="checkbox" class="innerDiv-div-input" id="innerDiv-div-3-1"/>
-                    <label for="innerDiv-div-3-1"><img src="/images/python_icon.png"></label>
-                </div>
-
-                <div class="innerDiv-div-item">
-                    <input type="checkbox" class="innerDiv-div-input" id="innerDiv-div-3-2"/>
-                    <label for="innerDiv-div-3-2"><img src="/images/java_icon.png"></label>
-                </div>
-
-                <div class="innerDiv-div-item">
-                    <input type="checkbox" class="innerDiv-div-input" id="innerDiv-div-3-3"/>
-                    <label for="innerDiv-div-3-3"><img src="/images/js_icon.png"></label>
-                </div>
-
-                <div class="innerDiv-div-item">
-                    <input type="checkbox" class="innerDiv-div-input" id="innerDiv-div-3-4"/>
-                    <label for="innerDiv-div-3-4"><img src="/images/mongodb_icon.png"></label>
-                </div>
-
-            </li>
-          </div>
-        </div>
-
       </div>
+
+      <hr>
+      
+      <div class="innerDiv" id="innerDiv2">
+        <label for="innerDiv-div2">Social:</label>
+        <div class="innerDiv-div" id="innerDiv-div2">
+
+          <label for="innerDiv-div-2-1">Enter your LinkedIn url: </label>
+          <input class="innerDiv-div-input" type="text" id="innerDiv-div-2-1" name="LinkedIn" placeholder="https://www.linkedin.com/in/johndoe
+          "/>
+
+          <label for="innerDiv-div-2-2">Enter your portfolio website url: </label>
+          <input class="innerDiv-div-input" type="text" id="innerDiv-div-2-2" name="Portfolio" placeholder="https://www.example.com"/>
+
+          <label for="innerDiv-div-2-3">Enter your Twitter url: </label>
+          <input class="innerDiv-div-input" type="text" id="innerDiv-div-2-3" name="Twitter" placeholder="https://twitter.com/johndoe
+          "/>
+        </div>
+        
+      </div>
+
+      <hr>
+
+      <!-- languages -->
+
+      <div class="innerDiv" id="innerDiv3">
+        
+        <label for="innerDiv-div3">Programming Languages</label>
+        <div class="innerDiv-div" id="innerDiv-div3">
+
+              <div class="innerDiv-div-item">
+                  <input type="checkbox" class="innerDiv-div-input" name="Python" id="innerDiv-div-3-1"/>
+                  <label for="innerDiv-div-3-1"><img src="/images/python_icon.png"></label>
+              </div>
+
+              <div class="innerDiv-div-item">
+                  <input type="checkbox" class="innerDiv-div-input" name="Java" id="innerDiv-div-3-2"/>
+                  <label for="innerDiv-div-3-2"><img src="/images/java_icon.png"></label>
+              </div>
+
+              <div class="innerDiv-div-item">
+                  <input type="checkbox" class="innerDiv-div-input" name="Javascript" id="innerDiv-div-3-3"/>
+                  <label for="innerDiv-div-3-3"><img src="/images/js_icon.png"></label>
+              </div>
+
+              <div class="innerDiv-div-item">
+                  <input type="checkbox" class="innerDiv-div-input" name="Mongodb" id="innerDiv-div-3-4"/>
+                  <label for="innerDiv-div-3-4"><img src="/images/mongodb_icon.png"></label>
+              </div>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Skills -->
+      <div class="innerDiv" id="innerDiv4">
+        
+        <label for="innerDiv-div4">Skills</label>
+        <div class="innerDiv-div" id="innerDiv-div4">
+
+              <div class="innerDiv-div-item">
+                  <input type="checkbox" class="innerDiv-div-input" id="innerDiv-div-4-1"/>
+                  <label for="innerDiv-div-4-1"><img src="/images/python_icon.png"></label>
+              </div>
+
+              <div class="innerDiv-div-item">
+                  <input type="checkbox" class="innerDiv-div-input" id="innerDiv-div-4-2"/>
+                  <label for="innerDiv-div-4-2"><img src="/images/java_icon.png"></label>
+              </div>
+
+              <div class="innerDiv-div-item">
+                  <input type="checkbox" class="innerDiv-div-input" id="innerDiv-div-4-3"/>
+                  <label for="innerDiv-div-4-3"><img src="/images/js_icon.png"></label>
+              </div>
+
+              <div class="innerDiv-div-item">
+                  <input type="checkbox" class="innerDiv-div-input" id="innerDiv-div-4-4"/>
+                  <label for="innerDiv-div-4-4"><img src="/images/mongodb_icon.png"></label>
+              </div>
+
+        </div>
+      </div>
+
+
+      <hr>
       <button type="submit">Submit</button>
 
     </form>

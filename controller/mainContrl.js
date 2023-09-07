@@ -3,20 +3,37 @@ const home = (req, res) => {
 }
 
 
-const generatePlain = (req, res) =>{
+const GetGeneratePlain = (req, res) =>{
     res.render('genPlain')
 }
 
 
-const generateAuto = (req, res) => {
-    res.send('blank')
+
+const PostResults = (req, res) =>{
+    var body = req.body
+
+    
+
+    res.type('text').send(`<h1>Hello my name is ${body.Name}</h1>`)
+    res.end()
 }
 
 
-const results = (req, res) =>{
-    var {name} = req.body
-    res.write(`<h1>Hello my name is ${name}</h1>`)
-}
 
 
-module.exports = {home, generateAuto, generatePlain, results}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+module.exports = {home, GetGeneratePlain, PostResults}
